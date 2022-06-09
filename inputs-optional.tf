@@ -10,8 +10,6 @@ variable "location" {
   default     = "UK South"
 }
 
-
-
 variable "name" {
   default     = ""
   description = "The default name will be product+component+env, you can override the product+component part by setting this"
