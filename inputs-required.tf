@@ -8,8 +8,6 @@ variable "common_tags" {
   type        = map(string)
 }
 
-
-
 variable "product" {
   description = "https://hmcts.github.io/glossary/#product"
   type        = string
