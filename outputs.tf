@@ -5,7 +5,3 @@ output "resource_group_name" {
 output "resource_group_location" {
   value = "resource_group_location"
 }
-
-output "password" {
-  value = "password_value"
-}
