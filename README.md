@@ -1,15 +1,4 @@
 <!-- BEGIN_TF_DOCS -->
-
-# Terraform Module Template
-
-The purpose of this template is to speed up the creation of Terraform module template within HMCTS and help keep the same standards across multiple teams. If you need to create a new app, you can simply use this one as a starting point and build on top of it.A brief description of what this project does and who it's for.
-
-## Github actions in the workflow
-
-A typical workflow for a Terraform module includes terraform init and terraform validate commands. The init command initializes the module and downloads any needed providers. The validate command helps validate the configuration files in the module and is useful for general verification.
-Now, let’s take a look at how to construct this workflow with a GitHub Actions workflow file. Create a new workflow file at /.github/workflows/terraform.yml in the root of the GitHub repository.
-Workflow should be triggered on a pull request event opened against the master branch. Then, define each step to be run during this workflow. In the example, we use the predefined checkout action to retrieve the code contained in the repository. /cnp-azuredevops-libraries file change to execute mode after that it run the file use the bash shell script. Specify steps to execute terraform init,validate and format commands.
-
 ## Requirements
 
 | Name | Version |
