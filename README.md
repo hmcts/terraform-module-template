@@ -1,4 +1,18 @@
-# Terraform Module Template
+# terraform-module-template
+
+<!-- TODO fill in resource name in link to product documentation -->
+Terraform module for [Resource name](https://example.com).
+
+## Example
+
+<!-- todo update module name
+```hcl
+module "todo_resource_name" {
+  source = "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=master"
+  ...
+}
+
+```
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -40,3 +54,18 @@
 | <a name="output_resource_group_location"></a> [resource\_group\_location](#output\_resource\_group\_location) | n/a |
 | <a name="output_resource_group_name"></a> [resource\_group\_name](#output\_resource\_group\_name) | n/a |
 <!-- END_TF_DOCS -->
+
+## Contributing
+
+We use pre-commit hooks for validating the terraform format and maintaining the documentation automatically.
+Install it with:
+
+```shell
+$ brew install pre-commit terraform-docs
+$ pre-commit install
+```
+
+If you add a new hook make sure to run it against all files:
+```shell
+$ pre-commit run --all-files
+```
