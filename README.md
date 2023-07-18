@@ -5,10 +5,10 @@ Terraform module for [Resource name](https://example.com).
 
 ## Example
 
-<!-- todo update module name
+<!-- todo update module name -->
 ```hcl
 module "todo_resource_name" {
-  source = "git@github.com:hmcts/terraform-module-postgresql-flexible?ref=master"
+  source = "git@github.com:hmcts/terraform-module-todo?ref=main"
   ...
 }
 
